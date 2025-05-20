@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Bakkali - Web Developer & Security Specialist combining coding expertise with penetration testing skills to build secure applications." />
+  <meta name="keywords" content="Web Development, Freelance Developer, SEO, Responsive Design, E-commerce, Web Development, Penetration Testing, Secure Coding, Ethical Hacking, Full Stack Developer, OWASP" />
+  <meta name="author" content="Mohammed Bakkali" />
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:url" content="https://mohammed-bakkali.netlify.app/" />
+  <meta property="og:title" content="Developer & Security Specialist - Mohammed Bakkali" />
+  <meta property="og:description" content="Freelance web developer certified penetration tester with expertise in building secure web applications. " />
+  <meta property="og:image" content="path/to/your/image.jpg" />
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Developer & Security Specialist" />
+  <meta name="twitter:description" content="Building secure web applications with both development and penetration testing expertise." />
+  <meta name="twitter:image" content="https://mohammed-bakkali.netlify.app/images/1689202771955.jpg" />
+
+  <!-- CSS الأساسي لـ Alertify -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- CSS اختياري (theme) يمكن حذفه إن كنت تستعمل ستايلك الخاص -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+
+  
+  <title> WEB Developer & Security Specialist | Mohammed Bakkali</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./CSS/master.css" />
+
+    <!-- Font Awesome Library from CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Google Fonts for custom fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <!-- ALERTIFY JS -->
+    <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" /></noscript>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon" />
+
+    <!-- JavaScript Libraries -->
+    <!-- Particles.js Library for particle effects -->
+    <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Stats.js Library for performance monitoring -->
+    <script defer src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <!-- EmailJS Library for sending emails -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "PxT3bopGK67Wcy0Ha",
+            });
+        })();
+    </script>
+        <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammed Bakkali",
+      "jobTitle": "Freelance Web Developer & Security Specialist",
+      "url": "https://mohammed-bakkali.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohammed-bakkali-4821a123a/",
+        "https://github.com/mohammed-bakkali",
+        "https://twitter.com/Mohamme52469572"
+      ],
+      "alumniOf": "Solicode",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      }
+    }
+    </script>
+</head>
+
+  <body>
+
+
+  <!-- WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=+212605623477&text=Hello%20from%20your%20website" class="whatsapp-button" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+    <!-- ENd -->
+
+    <!-- Start Scroll Top -->
+    <span class="up">
+      <i class="fa-solid fa-circle-up"></i>
+    </span>
+    <!-- End Scroll top -->
+
+    <!-- Start Settinges Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear fa-spin"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#1cd438"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+            <li data-color="#FF6B6B"></li>
+            <li data-color="#4ECDC4"></li>
+            <li data-color="#FFD166"></li>
+            <li data-color="#06D6A0"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Setting Box -->
+
+    <!-- ========== Start Header ========== -->
+    <div class="header container" id="head">
+      <div class="container">
+        <!-- Logo and site name -->
+        <a href="#Home" class="logo"><img style="width: 100px;" src="./icons/MED.png" alt="Logo"></a>
+        <!-- Hamburger icon for the toggle menu -->
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- Navigation links -->
+        <ul class="main-nav">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <!-- List items for navigation links -->
+          <li><a href="#Home" class="active">Home</a></li>
+          <li><a href="#About Me">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#bloge">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ========== End Header ========== -->
+    <!-- ========== Start Landing ========== -->
+    <div class="landing">
+      <div class="container" id="Home">
+        <div class="text">
+          <h4>Hello!</h4>
+          <h1>I'm <span>Mohammed</span> Bakkali</h1>
+          <h3>Web Developer | Penetration Tester</h3>
+          
+          <div class="contact-icons">
+            <a 
+              target="_blank" 
+              href="https://www.linkedin.com/in/mohammed-bakkali-4821a123a/"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+            <a 
+              target="_blank" 
+              href="https://github.com/mohammed-bakkali"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <a 
+              target="_blank" 
+              href="https://twitter.com/Mohamme52469572"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+            <a 
+              target="_blank" 
+              href="https://www.instagram.com/mohammed_bk45/"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a 
+              target="_blank" 
+              href="https://www.upwork.com/freelancers/~01ac9630508b53f681?s=1110580755057594368"
+            >
+              <i class="fab fa-upwork"></i>
+            </a>
+
+            <a target="_blank" href="https://tryhackme.com/">
+              <i class="fas fa-shield-alt"></i>
+            </a>
+          
+            </a> 
+          </div>
+          
+          <a href="#contact" class="btn hire_me">Hire me !</a>
+          <a download target="_blank" href="./Mohammed_Bakkali_cv.pdf" class="btn download">
+            Download cv
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+      <a href="#About Me" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+    <!-- ========== End Landing ========== -->
+    <!-- ========== Start Stats ========== -->
+    <div class="stats">
+      <div class="container" >
+        
+        <div class="box" >
+          <i class="fas fa-bug fa-2x fa-fw"></i>
+          <span class="number" data-goal="150">150</span>
+          <span class="text">Vulnerabilities Found</span>
+        </div>
+        <div class="box" >
+          <i class="fas fa-code fa-2x fa-fw"></i>
+          <span class="number" data-goal="135">135</span>
+          <span class="text">Projects</span>
+        </div>
+        <div class="box" >
+          <i class="fas fa-code-branch fa-2x fa-fw"></i>
+          <span class="number" data-goal="50">50</span>
+          <span class="text">Security Tools</span>
+          
+        </div>
+        <div class="box">
+          <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+          <span class="number" data-goal="500">500</span>
+          <span class="text">Money</span>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End Stats ========== -->
+    <!-- ========== Start About ========== -->
+
+  <div class="about" id="About Me">
+    <div class="container">
+      <div class="main-heading">
+        <h2 class="main-title">About Me</h2>
+        <p>
+          Ethical hacker with a passion for identifying and mitigating security vulnerabilities to protect digital assets.
+        </p>
+      </div>
+      <div class="about-container">
+        <div class="image">
+          <img class="about__img" src="images/profile.jpeg" alt="Security Professional">
+        </div>
+        <div class="content about__content">
+          <h1>Security Researcher</h1>
+          <h4>Protecting Your Digital Assets</h4>
+          <p>
+            My name is <span>Mohammed Bakkali</span>, I am a Web Developer and  Penetration Tester.
+            specialize in building secure, high-performance web applications and identifying vulnerabilities to enhance cybersecurity. 
+          </p>
+          <div class="about-gri">
+            <div class="about-in">
+              <h5><i class="fas fa-code"></i> Web Developer</h5>
+            </div>
+            <div class="about-in">
+              <h5><i class="fas fa-fingerprint"></i> Vulnerability Assessment</h5>
+            </div>
+            <div class="about-in">
+              <h5><i class="fas fa-lock"></i> Secure Code Review</h5>
+            </div>
+            <div class="about-in">
+              <h5><i class="fas fa-network-wired"></i> Network Pentesting</h5>
+            </div>
+          </div>
+          <a href="#contact" class="btn hire_me">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- ========== End About ========== -->
+    <!-- ========== Start Services ========== -->
+    <div class="services" id="services">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Security Services</h2>
+          <p>
+            Elevate your digital presence with our custom development services.
+            Whether you need a mobile app, web development, desktop app, or
+            Security solutions, we've got you covered. Contact me to convert your ideas Into reality.
+          </p>
+        </div>
+        <div class="services-container category__box">
+          <div class="box mobile">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h6>Mobil Apps</h6>
+            <p>
+              I can develop professional mobile applications according to the requirements of the client or the company.
+            </p>
+          </div>
+          <div class="box web">
+            <i class="fa-solid fa-code"></i>
+            <h6>Web Development</h6>
+            <p>
+              I can professionally develop and program websites according to the requirements of the client or the company.
+            </p>
+          </div>
+          <div class="box desctop">
+            <i class="fa-solid fa-desktop"></i>
+            <h6>Desktop Apps</h6>
+            <p>
+              I can develop professional desktop applications according to the requirements of the client or the company.
+        </p>
+            </p>
+          </div>
+          <div class="box desctop">
+            <i class="fa-solid fa-bug"></i>
+            <h6>Security</h6>
+            <p>
+              I can develop professional security applications according to the requirements of the client or the company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End Services ========== -->
+    <!-- ========== Start Skills ========== -->
+      <div class="skills" id="skills">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Skills</h2>
+          <p>
+            Highlight your projects and achieve your goals with my versatile
+            technical skills. Contact me to discuss your next exciting project !
+          </p>
+        </div>
+        <div class="skills-container">
+
+          <div class="skill-card fade-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+              <div class="card-header">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Web Penetration Testing</h3>
+              </div>
+              <ul>
+                <li><i class="fab fa-php"></i> PHP, HTML, JS, SQL</li>
+                <li><i class="fab fa-python"></i> Python, Ruby</li>
+                <li><i class="fas fa-shield-halved"></i> OWASP Top 10</li>
+                <li><i class="fas fa-bug"></i> Burp Suite, OWASP ZAP</li>
+              </ul>
+          </div>
+          
+          <div class="skill-card fade-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <div class="card-header">
+              <i class="fas fa-network-wired"></i>
+              <h3>Network Security</h3>
+            </div>
+            <ul>
+              <li><i class="fas fa-wifi"></i> TCP/IP, HTTP/HTTPS, DNS</li>
+              <li><i class="fas fa-lock"></i> Firewalls, VPNs, NAT</li>
+              <li><i class="fas fa-search"></i> Network Scanning</li>
+              <li><i class="fas fa-network-wired"></i> Wireshark, Nmap</li>
+            </ul>
+          </div>
+          
+          <div class="skill-card fade-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <div class="card-header">
+              <i class="fab fa-linux"></i>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <ul>
+              <li><i class="fab fa-linux"></i> Kali Linux, Parrot OS</li>
+              <li><i class="fas fa-database"></i> SQLmap, Wpscan</li>
+              <li><i class="fas fa-bug"></i> Metasploit Framework</li>
+              <li><i class="fas fa-flag"></i> TryHackMe, Hack The Box</li>
+            </ul>
+          </div>
+      
+          <div class="skill-card fade-in" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+            <div class="card-header">
+              <i class="fas fa-code"></i>
+              <h3>Web Development </h3>
+            </div>
+            <ul>
+              <li><i class="fab fa-html5"></i> HTML5, CSS3, JavaScript</li>
+              <li><i class="fab fa-node-js"></i> Node.js, Express.js</li>
+              <li><i class="fas fa-database"></i> MongoDB</li>
+              <li><i class="fas fa-key"></i> REST APIs, JWT</li>
+            </ul>
+          </div>
+          
+      </div>
+      <div class="skills-grid">
+        <div class="box">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Burp Suite</h4>
+        </div>
+        <div class="box">
+          <i class="fas fa-bug"></i>
+          <h4>Metasploit</h4>
+        </div>
+        <div class="box">
+          <i class="fas fa-network-wired"></i>
+          <h4>Nmap</h4>
+        </div>
+        <div class="box">
+          <i class="fas fa-database"></i>
+          <h4>SQLmap</h4>
+        </div>
+        <div class="box">
+          <i class="fab fa-python"></i>
+          <h4>Python</h4>
+        </div>
+        <div class="box">
+          <i class="fas fa-terminal"></i>
+          <h4>Bash</h4>
+        </div>
+        <div class="box">
+          <i class="fas fa-terminal"></i>
+          <h4>PowerShell</h4>
+        </div>
+        <div class="box">
+          <i class="fab fa-linux"></i>
+          <h4>Kali Linux</h4>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    <!-- ========== End Skills ========== -->
+<!-- ========== Start Certificates ========== -->
+<div class="certificates" id="certificates">
+  <div class="container">
+    <div class="main-heading">
+      <h2 class="main-title">Certificates</h2>
+      <p>
+        Here are some of the certifications I've earned over the years. These reflect my commitment to continuous learning and staying updated with the latest industry standards.
+      </p>
+    </div>
+          <div class="certificates-grid">
+        <div class="certificate-card">
+          <img src="./images/certificates/OFPPT - Certificat en développement web_01.jpg" 
+              alt="Web Development Certificate from OFPPT" 
+              loading="lazy">
+          <h3>Web Development</h3>
+          <h4>Issued by OFPPT</h4>
+          <p>Date: July 2023</p>
+        </div>
+        
+        <div class="certificate-card">
+          <img src="./images/certificates/SIMPLON_page-0001.jpg" 
+              alt="Web Development Certificate from SIMPLON" 
+              loading="lazy">
+          <h3>Web Development</h3>
+          <h4>Issued by SIMPLON</h4>
+          <p>Date: June 2023</p>
+        </div>
+        
+        <div class="certificate-card">
+          <img src="./images/certificates/Udemy-Recta.js.png" 
+              alt="React JS Certificate from Udemy" 
+              loading="lazy">
+          <h3>React JS</h3>
+          <h4>Issued by Udemy</h4>
+          <p>Date: May 2024</p>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- ========== End Certificates ========== -->
+
+    <!-- ========== Start My Projects ========== -->
+    <div class="projects" id="Projects">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Security Projects</h2>
+          <p>
+            Below are some of the projects I have completed that you can browse through and take a look at the professionalism I provide.
+          </p>
+        </div>
+        <div class="filter_buttons">
+          <button class="active" data-name="all">All Projects</button>
+          <button data-name="web">Web Security</button>
+          <button data-name="network">Network Security</button>
+          <button data-name="tools">Security Tools</button>
+          <button data-name="REACT">REACT JS</button>
+          <button data-name="Mern stack">Mern stack</button>
+        </div>
+
+
+        <div class="projects-container filterable_cards">
+          <div class="project-card fade-in">
+              <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+              <div class="project-content">
+                  <h3>E-commerce Security Audit</h3>
+                  <p> Developed a full-featured e-commerce website with security standards. Performed penetration testing based on OWASP Top 10 vulnerabilities.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Web Security</span>
+                      <span class="project-tag">OWASP</span>
+                      <span class="project-tag">Express Js</span>
+                      <span class="project-tag">Rust Api</span>
+                      <span class="project-tag">JWT</span>
+
+                  </div>
+                  <div class="project-links">
+                    <a target="_blank" href="#" class="btn"><i class="fa-solid fa-file-pdf"></i> Report</a>
+                    <a target="_blank" href="#" class="btn outline"><i class="fas fa-lock"></i> Private</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="project-card fade-in">
+              <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+              <div class="project-content">
+                  <h3>Corporate Network Assessment</h3>
+                  <p>Internal network penetration test revealing critical vulnerabilities in Active Directory configuration and outdated services.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Network Pentest</span>
+                      <span class="project-tag">Windows</span>
+                      <span class="project-tag">Privilege Escalation</span>
+                  </div>
+                  <div class="project-links">
+                    <a target="_blank" href="#" class="btn"><i class="fa-brands fa-github "></i> Code</a>
+                    <a target="_blank" href="#" class="btn outline"><i class="fas fa-external-link-alt "></i> Demo</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="project-card fade-in">
+              <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+              <div class="project-content">
+                  <h3>Bug Bounty Findings</h3>
+                  <p>Discovered and reported multiple vulnerabilities through HackerOne and Bugcrowd programs, including SSRF and IDOR issues.</p>
+                  <div class="project-tags">
+                      <span class="project-tag">Bug Bounty</span>
+                      <span class="project-tag">Web App Security</span>
+                      <span class="project-tag">Responsible Disclosure</span>
+                  </div>
+                    <div class="project-links">
+                      <a href="#" class="btn">View Reports</a>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <!-- ========== End My Projects ========== -->
+    <!-- ========== Start Reviews ========== -->
+    <div class="reviews">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Reviews</h2>
+          <p class="paragraph">
+            Your projects are in good hands. Join the list of satisfied clients by contacting me for your next development challenge
+          </p>
+        </div>
+        <div class="wrapper">
+          <i id="left" class="fas fa-angle-left change-background fa-2x"></i>
+          <div class="reviews-container customer__review carousel">
+            <div class="box">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique culpa ut amet voluptas asperiores alias sed
+                consequatur.
+              </p>
+              <div class="box-footer">
+                <img src="imgs/avatar-01.png" alt="" />
+                <div class="info">
+                  <p>Adam abrad</p>
+                  <span>Lawyerr</span>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                ></i>
+              </div>
+            </div>
+            <div class="box">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique culpa ut amet voluptas asperiores alias sed
+                consequatur.
+              </p>
+              <div class="box-footer">
+                <img src="imgs/avatar-02.png" alt="" />
+                <div class="info">
+                  <p>Jack</p>
+                  <span class="title"> Devloper</span>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                ></i>
+              </div>
+            </div>
+            <div class="box">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique culpa ut amet voluptas asperiores alias sed
+                consequatur.
+              </p>
+              <div class="box-footer">
+                <img src="imgs/avatar-03.png" alt="" />
+                <div class="info">
+                  <p>Yuliya</p>
+                  <span>Designer</span>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                ></i>
+              </div>
+            </div>
+            <div class="box">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique culpa ut amet voluptas asperiores alias sed
+                consequatur.
+              </p>
+              <div class="box-footer">
+                <img src="imgs/avatar-04.png" alt="" />
+                <div class="info">
+                  <p>nour</p>
+                  <span>UX/UI desgine</span>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                ></i>
+              </div>
+            </div>
+            <div class="box">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique culpa ut amet voluptas asperiores alias sed
+                consequatur.
+              </p>
+              <div class="box-footer">
+                <img src="imgs/avatar-05.png" alt="" />
+                <div class="info">
+                  <p>Julien</p>
+                  <span>software developer</span>
+                </div>
+                <i
+                  class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <i id="right" class="fas fa-angle-right change-background fa-2x"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End Reviews ========== -->
+    <!--  -->
+    <!-- ========== Start Articles ========== -->
+    <!-- <div class="articles" id="bloge">
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Articles</h2>
+          <p>
+            Explore some articles of interest to the technology world.
+          </p>
+        </div>
+        <div class="articles-container articles__boxes">
+          <div class="box">
+            <img src="images/img-3.jpg" alt="" />
+            <div class="content">
+              <h3>Devlopment web</h3>
+              <span>15 FEB 2023</span>
+              <p>
+                Tomfoolery crikey bits and bobs brilliant bamboozled down the
+                pub amongst brolly hanky panky, cack b
+              </p>
+              <a href="#">Rrad More</a>
+            </div>
+          </div>
+          <div class="box popular">
+            <img src="images/technology(2).jpg" alt="" />
+            <div class="content">
+              <h3>Cyber security</h3>
+
+              <span>12 FEB 2024</span>
+              <p>
+                Tomfoolery crikey bits and bobs brilliant bamboozled down the
+                pub amongst brolly hanky panky, cack b
+              </p>
+              <a href="#">Rrad More</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/technology(3).jpg" alt="" />
+            <div class="content">
+              <h3>Programming</h3>
+              <span>08 FEB 2023</span>
+              <p>
+                Tomfoolery crikey bits and bobs brilliant bamboozled down the
+                pub amongst brolly hanky panky, cack b
+              </p>
+              <a href="#">Rrad More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ========== End Articles ========== -->
+    <!-- ========== Start Contact ========== -->
+    <div class="contact" id="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="main-heading">
+          <h2 class="main-title">Contact</h2>
+          <p>
+            Do you have a question or project in mind? Let's communicate together! Your projects are in safe hands. Join the list of satisfied customers by contacting me for your next development challenge!
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-text">
+            <h2>Secure Communication</h2>
+            <h4>Let 's Work Is Together</h4>
+            <p>
+              Are you interested in securing your systems? Do you provide secure website development? Do you need a professional security assessment? Contact me for penetration testing, security consulting, or responsible disclosure services.!.
+            </p>
+            <div class="contact-list">
+              <li><a href="#"> 📍 Tanger - Morocco</a></li>
+              <li>
+                <a
+                  href="mailto:mohammedbakkali807@gmail.com?subject=Hi&body=How%20are%20you"
+                >
+                  📩 mohammedbakkali807@gmail.com</a
+                >
+              </li>
+              <li><a href="#"> 📞 +212 722-923357</a></li>
+              <li><a href="#">🔑 PGP Key: 0xABCDEF1234567890</a></li>
+            </div>
+            <div class="contact-icons">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mohammed-bakkali-4821a123a/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a target="_blank" href="https://github.com/mohammed-bakkali"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a target="_blank" href="https://twitter.com/Mohamme52469572"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.upwork.com/freelancers/~01ac9630508b53f681?s=1110580755057594368"
+                ><i class="fab fa-upwork"></i
+              ></a>
+              <a target="_blank" href="https://www.instagram.com/mohammed_bk45/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a target="_blank" href="https://tryhackme.com/">
+                <i class="fas fa-shield-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-from">
+            <form class="contact-form" onsubmit="sendMail(event)">
+              <!-- Input for user's Name -->
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <!-- Input for user's email -->
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+              />
+
+              <!-- Input for user's Subject -->
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter Your Subject"
+                required
+              />
+
+              <!-- Textarea for user's message -->
+              <textarea
+                class="msg"
+                id="message"
+                placeholder="Enter your Message"
+                rows="10"
+                cols="30"
+                spellcheck="true"
+                required
+              ></textarea>
+
+              <!-- Submit button -->
+              <button type="submit" class="send-btn btn hire_me">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== End Contact ========== -->
+    <!-- ========== Start Footer ========== -->
+    <div class="footer">
+      <div class="container"></div>
+      <p class="Reserved">
+        Created By <span>Mohammed Bakkali</span> |
+        <i class="fa-regular fa-copyright"></i> 2024 All rights reserved.
+      </p>
+      <p style="font-size: 0.8rem;margin-top: 0.5rem;text-align: center;">Web Developer | Ethical Hacker | Penetration Tester  </p>
+    </div>
+    <!-- ========== End Footer ========== -->
+
+    <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="JS/main.js"></script>
+    <script>
+
+      function sendMail(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  let parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs
+    .send(
+      "service_fwjmacl",        // Service ID
+      "template_w689vvc",       // Template ID
+      parms,
+      "LIMudI5E_z0xjMog6"        // Public Key
+    )
+    .then(function () {
+      alertify.alert("Success", "Email sent successfully!", function(){
+        alertify.success('Message delivered');
+      }).set('type', 'success'); // Set type to success
+    })
+    .catch(function (error) {
+      alertify.alert("Error", "Failed to send email: " + error.message, function(){
+        alertify.error('Please try again');
+      }).set('type', 'error'); // Set type to error
+      console.error("Error sending email:", error);
+    });
+}
+  
+    </script>
+    
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+  </body>
+</html>

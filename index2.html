@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1cd438">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Primary Meta Tags -->
+  <title>Mohammed Bakkali | Web Developer & Security Specialist</title>
+  <meta name="title" content="Mohammed Bakkali | Web Developer & Security Specialist">
+  <meta name="description" content="Freelance web developer and certified penetration tester with expertise in building secure web applications.">
+  <meta name="keywords" content="Web Development, Security Specialist, Penetration Testing, Ethical Hacking, Full Stack Developer, OWASP">
+  <meta name="author" content="Mohammed Bakkali">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mohammed-bakkali.netlify.app/">
+  <meta property="og:title" content="Mohammed Bakkali | Web Developer & Security Specialist">
+  <meta property="og:description" content="Freelance web developer and certified penetration tester with expertise in building secure web applications.">
+  <meta property="og:image" content="https://mohammed-bakkali.netlify.app/images/preview.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mohammed-bakkali.netlify.app/">
+  <meta property="twitter:title" content="Mohammed Bakkali | Web Developer & Security Specialist">
+  <meta property="twitter:description" content="Freelance web developer and certified penetration tester with expertise in building secure web applications.">
+  <meta property="twitter:image" content="https://mohammed-bakkali.netlify.app/images/preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Preload Resources -->
+  <!-- <link rel="preload" href="CSS/master.css" as="style"> -->
+  <link rel="preload" href="JS/main.js" as="script">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/master.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammed Bakkali",
+      "jobTitle": "Freelance Web Developer & Security Specialist",
+      "url": "https://mohammed-bakkali.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohammed-bakkali-4821a123a/",
+        "https://github.com/mohammed-bakkali",
+        "https://twitter.com/Mohamme52469572"
+      ]
+    }
+  </script>
+</head>
+
+<style>
+  /* CSS Variables */
+:root {
+  --primary: #1cd438;
+  --primary-light: rgba(28, 212, 56, 0.1);
+  --secondary: #0a0a0a;
+  --accent: #00ccff;
+  --text-color: #e0e0e0;
+  --text-muted: #999;
+  --dark-bg: #121314;
+  --card-bg: #171717;
+  --border-color: #333;
+  --success: #4CAF50;
+  --error: #E91E63;
+  --warning: #FFC107;
+  --info: #03A9F4;
+  
+  --h1-font: 3.5rem;
+  --h2-font: 2.5rem;
+  --h3-font: 1.8rem;
+  --p-font: 1.1rem;
+  
+  --border-radius: 5px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Dark Mode Preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f0f0f0;
+    --secondary: #0a0a0a;
+    --card-bg: #1e1e1e;
+  }
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--secondary);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.section-title:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--primary);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primary);
+  box-shadow: 0 0 20px var(--primary);
+  transform: translateY(-3px);
+}
+
+.btn.outline {
+  background: transparent;
+  color: var(--primary);
+}
+
+.btn.outline:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.main-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: var(--transition);
+}
+
+.main-nav a:hover::before {
+  width: 100%;
+}
+
+.main-nav a.active {
+  color: var(--primary);
+}
+
+.menu-btn, .cancel-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Landing Section */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: url('../images/security-bg.jpg') no-repeat center center/cover;
+  padding-top: 80px;
+}
+
+.landing::before {
+  content: '';
+  position: absolute;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.landing .container {
+  position: relative;
+  z-index: 1;
+}
+
+.landing .text {
+  max-width: 800px;
+}
+
+.landing h4 {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 8px 15px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  margin-bottom: 20px;
+  animation: blink 2s infinite;
+}
+
+.landing h1 {
+  font-size: var(--h1-font);
+  margin-bottom: 15px;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(28, 212, 56, 0.5);
+}
+
+.landing h1 span {
+  color: var(--primary);
+}
+
+.landing h2 {
+  font-size: var(--h2-font);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(18, 20, 28, 0.8);
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.contact-icons a:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.go-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--primary);
+  animation: bounce 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(-20px) translateX(-50%); }
+  60% { transform: translateY(-10px) translateX(-50%); }
+}
+
+/* Stats Section */
+.stats {
+  padding: 80px 0;
+  background: var(--dark-bg);
+}
+
+.stats .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.stat-box {
+  background: var(--card-bg);
+  padding: 30px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(28, 212, 56, 0.2);
+}
+
+.stat-box i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.stat-box .number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primary);
+}
+
+.stat-box .text {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  background: var(--secondary);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+
+.about .image {
+  position: relative;
+}
+
+.about .image::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--primary);
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.about .image img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about .content h3 {
+  font-size: var(--h3-font);
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.about .content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.about .content p {
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--primary);
+  transition: var(--transition);
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow);
+}
+
+.skill-item i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-item h5 {
+  font-size: 1rem;
+}
+
+/* Services Section */
+.services {
+  padding: 80px 0;
+  background: var(--dark-bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(28, 212, 56, 0.2);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1rem;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 80px 0;
+  background: var(--secondary);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border-left: 3px solid var(--primary);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(3, 169, 244, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header i {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  color: var(--primary);
+  background: rgba(3, 169, 244, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card ul li {
+  padding: 10px 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.skill-card ul li:last-child {
+  border-bottom: none;
+}
+
+.skill-card ul li:hover {
+  color: var(--text-color);
+}
+
+.skill-card ul li i {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: var(--primary);
+  min-width: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.tech-item {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 25px 15px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(3, 169, 244, 0.2);
+  border-color: var(--primary);
+}
+
+.tech-item i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  display: block;
+  transition: var(--transition);
+}
+
+.tech-item:hover i {
+  transform: scale(1.1);
+}
+
+.tech-item h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Certificates Section */
+.certificates {
+  padding: 80px 0;
+  background: var(--dark-bg);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.certificate-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(28, 212, 56, 0.2);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.certificate-card h3 {
+  padding: 15px;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.certificate-card h4 {
+  padding: 0 15px;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.certificate-card p {
+  padding: 0 15px 15px;
+  font-size: 0.9rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+  background: var(--secondary);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  padding: 8px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-buttons button.active {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.filter-buttons button:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(28, 212, 56, 0.2);
+}
+
+.project-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  margin-bottom: 15px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.project-tags span {
+  background: rgba(28, 212, 56, 0.1);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links .btn {
+  flex: 1;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  position: relative;
+  padding: 80px 0;
+  background: url('../images/redmap.png') no-repeat center center/cover;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.contact-info h3 {
+  font-size: var(--h3-font);
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.contact-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  margin-bottom: 30px;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list i {
+  margin-right: 15px;
+  color: var(--primary);
+  width: 20px;
+  text-align: center;
+}
+
+.contact-list a {
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.contact-list a:hover {
+  color: var(--primary);
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(18, 20, 28, 0.8);
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  color: var(--secondary);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(28, 212, 56, 0.2);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #161718;
+  padding: 30px 0;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.copyright {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.copyright span {
+  color: var(--primary);
+}
+
+.credits {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+  transition: var(--transition);
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Scroll Top Button */
+.up {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 20px rgba(28, 212, 56, 0.3);
+  transition: var(--transition);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.up.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.up:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(28, 212, 56, 0.4);
+}
+
+/* Settings Box */
+.settings-box {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: var(--card-bg);
+  z-index: 1000;
+  padding: 20px;
+  transition: var(--transition);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-box.open {
+  left: 0;
+}
+
+.toggle-settings {
+  position: absolute;
+  right: -40px;
+  top: 100px;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.option-box {
+  margin-bottom: 20px;
+}
+
+.option-box h4 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.colors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colors-list li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: var(--transition);
+  list-style: none;
+}
+
+.colors-list li.active {
+  opacity: 1;
+  border: 2px solid white;
+  transform: scale(1.1);
+}
+
+.colors-list li:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  :root {
+    --h1-font: 3rem;
+    --h2-font: 2.2rem;
+    --h3-font: 1.6rem;
+  }
+  
+  .menu-btn, .cancel-btn {
+    display: block;
+  }
+  
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background: var(--dark-bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    z-index: 1000;
+  }
+  
+  .main-nav.active {
+    left: 0;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-nav a {
+    font-size: 1.2rem;
+    padding: 15px 0;
+  }
+  
+  .cancel-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-font: 2.5rem;
+    --h2-font: 2rem;
+    --h3-font: 1.4rem;
+  }
+  
+  .stats .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --h1-font: 2rem;
+    --h2-font: 1.8rem;
+  }
+  
+  .stats .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .up {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    bottom: 80px;
+    right: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+</style>
+<body>
+  <!-- WhatsApp Button -->
+  <a href="https://api.whatsapp.com/send?phone=+212605623477&text=Hello%20from%20your%20website" 
+      class="whatsapp-button" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Contact me on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll Top Button -->
+  <button class="up" aria-label="Scroll to top">
+    <i class="fa-solid fa-circle-up"></i>
+  </button>
+
+  <!-- Settings Box -->
+  <div class="settings-box">
+    <div class="toggle-settings" aria-label="Toggle settings">
+      <i class="fa fa-gear fa-spin"></i>
+    </div>
+    <div class="settings-container">
+      <div class="option-box">
+        <h4>Theme Color</h4>
+        <ul class="colors-list">
+          <li class="active" data-color="#1cd438" aria-label="Green theme"></li>
+          <li data-color="#E91E63" aria-label="Pink theme"></li>
+          <li data-color="#009688" aria-label="Teal theme"></li>
+          <li data-color="#03A9F4" aria-label="Blue theme"></li>
+          <li data-color="#4CAF50" aria-label="Green theme"></li>
+          <li data-color="#FF6B6B" aria-label="Red theme"></li>
+          <li data-color="#4ECDC4" aria-label="Turquoise theme"></li>
+          <li data-color="#FFD166" aria-label="Yellow theme"></li>
+          <li data-color="#06D6A0" aria-label="Mint theme"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="head">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="Home">
+        <img src="./icons/MED.png" alt="Mohammed Bakkali Logo" width="100" height="40">
+      </a>
+      
+      <button class="icon menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="icon cancel-btn" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Landing Section -->
+  <section class="landing" id="home">
+    <div class="container">
+      <div class="text">
+        <h4>Hello!</h4>
+        <h1>I'm <span>Mohammed</span> Bakkali</h1>
+        <h2>Web Developer | Penetration Tester</h2>
+        
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/mohammed-bakkali-4821a123a/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/mohammed-bakkali" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://twitter.com/Mohamme52469572" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/mohammed_bk45/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01ac9630508b53f681?s=1110580755057594368" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Upwork">
+            <i class="fab fa-upwork"></i>
+          </a>
+          <a href="https://tryhackme.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="TryHackMe">
+          <i class="fas fa-shield-alt"></i>
+          </a>
+        </div>
+        
+        <div class="cta-buttons">
+          <a href="#contact" class="btn hire-me">Hire Me</a>
+          <a href="./Mohammed_Bakkali_cv.pdf" 
+            class="btn download" 
+            download
+            aria-label="Download CV">
+            Download CV <i class="fa-solid fa-cloud-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#about" class="go-down" aria-label="Scroll down">
+      <i class="fas fa-angle-double-down fa-2x"></i>
+    </a>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-box">
+        <i class="fas fa-bug fa-2x"></i>
+        <span class="number" data-goal="150">0</span>
+        <span class="text">Vulnerabilities Found</span>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-code fa-2x"></i>
+        <span class="number" data-goal="135">0</span>
+        <span class="text">Projects Completed</span>
+      </div>
+      <div class="stat-box">
+        <i class="fas fa-code-branch fa-2x"></i>
+        <span class="number" data-goal="50">0</span>
+        <span class="text">Security Tools</span>
+      </div>
+      <div class="stat-box">
+        <i class="far fa-money-bill-alt fa-2x"></i>
+        <span class="number" data-goal="500">0</span>
+        <span class="text">Happy Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p>Ethical hacker with a passion for identifying and mitigating security vulnerabilities to protect digital assets.</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="image">
+          <img src="images/security-profile.jpg" 
+              alt="Mohammed Bakkali - Security Professional" 
+              loading="lazy"
+              width="400"
+              height="500">
+        </div>
+        
+        <div class="content">
+          <h3>Security Researcher</h3>
+          <h4>Protecting Your Digital Assets</h4>
+          <p>My name is <span>Mohammed Bakkali</span>, I am a Web Developer and Penetration Tester. I specialize in building secure, high-performance web applications and identifying vulnerabilities to enhance cybersecurity.</p>
+          
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <h5>Web Developer</h5>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-fingerprint"></i>
+              <h5>Vulnerability Assessment</h5>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-lock"></i>
+              <h5>Secure Code Review</h5>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-network-wired"></i>
+              <h5>Network Pentesting</h5>
+            </div>
+          </div>
+          
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Security Services</h2>
+        <p>Elevate your digital presence with our custom development services. Whether you need a mobile app, web development, desktop app, or security solutions, I've got you covered.</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Mobile Apps</h3>
+          <p>I develop professional mobile applications according to the requirements of the client or the company with security in mind.</p>
+        </div>
+        
+        <div class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>I professionally develop and program websites according to client requirements with a focus on security best practices.</p>
+        </div>
+        
+        <div class="service-card">
+          <i class="fa-solid fa-desktop"></i>
+          <h3>Desktop Apps</h3>
+          <p>I develop professional desktop applications with security considerations from the ground up.</p>
+        </div>
+        
+        <div class="service-card">
+          <i class="fa-solid fa-bug"></i>
+          <h3>Security</h3>
+          <p>Comprehensive security services including penetration testing, vulnerability assessment, and secure code review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p>Highlight your projects and achieve your goals with my versatile technical skills.</p>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="card-header">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Web Penetration Testing</h3>
+          </div>
+          <ul>
+            <li><i class="fab fa-php"></i> PHP, HTML, JS, SQL</li>
+            <li><i class="fab fa-python"></i> Python, Ruby</li>
+            <li><i class="fas fa-shield-halved"></i> OWASP Top 10</li>
+            <li><i class="fas fa-bug"></i> Burp Suite, OWASP ZAP</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <div class="card-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Network Security</h3>
+          </div>
+          <ul>
+            <li><i class="fas fa-wifi"></i> TCP/IP, HTTP/HTTPS, DNS</li>
+            <li><i class="fas fa-lock"></i> Firewalls, VPNs, NAT</li>
+            <li><i class="fas fa-search"></i> Network Scanning</li>
+            <li><i class="fas fa-network-wired"></i> Wireshark, Nmap</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <div class="card-header">
+            <i class="fab fa-linux"></i>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <ul>
+            <li><i class="fab fa-linux"></i> Kali Linux, Parrot OS</li>
+            <li><i class="fas fa-database"></i> SQLmap, Wpscan</li>
+            <li><i class="fas fa-bug"></i> Metasploit Framework</li>
+            <li><i class="fas fa-flag"></i> TryHackMe, Hack The Box</li>
+          </ul>
+        </div>
+        
+        <div class="skill-card">
+          <div class="card-header">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+          </div>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML5, CSS3, JavaScript</li>
+            <li><i class="fab fa-node-js"></i> Node.js, Express.js</li>
+            <li><i class="fas fa-database"></i> MongoDB</li>
+            <li><i class="fas fa-key"></i> REST APIs, JWT</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="tech-item">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Burp Suite</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-bug"></i>
+          <h4>Metasploit</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-network-wired"></i>
+          <h4>Nmap</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-database"></i>
+          <h4>SQLmap</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-python"></i>
+          <h4>Python</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-terminal"></i>
+          <h4>Bash</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-terminal"></i>
+          <h4>PowerShell</h4>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-linux"></i>
+          <h4>Kali Linux</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certifications</h2>
+        <p>Here are some of the certifications I've earned over the years that reflect my commitment to continuous learning.</p>
+      </div>
+      
+      <div class="certificates-grid">
+        <div class="certificate-card">
+          <img src="./images/certificates/OFPPT-Certificat.jpg" 
+              alt="Web Development Certificate from OFPPT" 
+              loading="lazy">
+          <h3>Web Development</h3>
+          <h4>Issued by OFPPT</h4>
+          <p>Date: July 2023</p>
+        </div>
+        
+        <div class="certificate-card">
+          <img src="./images/certificates/SIMPLON-Certificat.jpg" 
+              alt="Web Development Certificate from SIMPLON" 
+              loading="lazy">
+          <h3>Web Development</h3>
+          <h4>Issued by SIMPLON</h4>
+          <p>Date: June 2023</p>
+        </div>
+        
+        <div class="certificate-card">
+          <img src="./images/certificates/Udemy-React.jpg" 
+              alt="React JS Certificate from Udemy" 
+              loading="lazy">
+          <h3>React JS</h3>
+          <h4>Issued by Udemy</h4>
+          <p>Date: May 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Security Projects</h2>
+        <p>Below are some of the security projects I have completed that demonstrate my expertise.</p>
+      </div>
+      
+      <div class="filter-buttons">
+        <button class="active" data-name="all">All Projects</button>
+        <button data-name="web">Web Security</button>
+        <button data-name="network">Network Security</button>
+        <button data-name="tools">Security Tools</button>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="project-content">
+            <h3>E-commerce Security Audit</h3>
+            <p>Developed a full-featured e-commerce website with security standards. Performed penetration testing based on OWASP Top 10 vulnerabilities.</p>
+            <div class="project-tags">
+              <span>Web Security</span>
+              <span>OWASP</span>
+              <span>Express.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn"><i class="fa-solid fa-file-pdf"></i> Report</a>
+              <a href="#" class="btn outline"><i class="fas fa-lock"></i> Private</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="network">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="project-content">
+            <h3>Corporate Network Assessment</h3>
+            <p>Internal network penetration test revealing critical vulnerabilities in Active Directory configuration and outdated services.</p>
+            <div class="project-tags">
+              <span>Network Pentest</span>
+              <span>Windows</span>
+              <span>Privilege Escalation</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="btn outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="tools">
+          <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+          <div class="project-content">
+            <h3>Bug Bounty Findings</h3>
+            <p>Discovered and reported multiple vulnerabilities through HackerOne and Bugcrowd programs, including SSRF and IDOR issues.</p>
+            <div class="project-tags">
+              <span>Bug Bounty</span>
+              <span>Web App Security</span>
+              <span>Responsible Disclosure</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">View Reports</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Do you have a question or project in mind? Let's communicate together!</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Secure Communication</h3>
+          <h4>Let's Work Together</h4>
+          <p>Are you interested in securing your systems? Need professional security assessment? Contact me for penetration testing, security consulting, or responsible disclosure services.</p>
+          
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> Tanger, Morocco</li>
+            <li>
+              <a href="mailto:mohammedbakkali807@gmail.com">
+                <i class="fas fa-envelope"></i> mohammedbakkali807@gmail.com
+              </a>
+            </li>
+            <li><i class="fas fa-phone"></i> +212 722-923357</li>
+            <li><i class="fas fa-key"></i> PGP Key: 0xABCDEF1234567890</li>
+          </ul>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mohammed-bakkali-4821a123a/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/mohammed-bakkali" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/Mohamme52469572" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~01ac9630508b53f681?s=1110580755057594368" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Upwork">
+            <i class="fab fa-upwork"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="sendMail(event)">
+            <div class="form-group">
+              <input type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Your Name" 
+                    required
+                    aria-label="Your Name">
+            </div>
+            
+            <div class="form-group">
+              <input type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Your Email" 
+                    required
+                    aria-label="Your Email">
+            </div>
+            
+            <div class="form-group">
+              <input type="text" 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Subject" 
+                    required
+                    aria-label="Subject">
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" 
+                        name="message" 
+                        rows="6" 
+                        placeholder="Your Message" 
+                        required
+                        aria-label="Your Message"></textarea>
+            </div>
+            
+            <button type="submit" class="btn submit-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; <span id="year"></span> Mohammed Bakkali. All rights reserved.
+      </p>
+      <p class="credits">
+        Web Developer | Ethical Hacker | Penetration Tester
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS
+    (function() {
+      emailjs.init({
+        publicKey: "PxT3bopGK67Wcy0Ha",
+      });
+    })();
+    
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Contact form handler
+    function sendMail(event) {
+      event.preventDefault();
+      
+      // Validate inputs
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+      
+      if (!name || !email || !subject || !message) {
+        alertify.error('Please fill all fields');
+        return;
+      }
+      
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alertify.error('Please enter a valid email');
+        return;
+      }
+      
+      const params = { 
+        name, 
+        email, 
+        subject, 
+        message 
+      };
+      
+      emailjs.send("service_d3lxzpk", "template_5xzv7ad", params)
+        .then(() => {
+          alertify.success('Message sent successfully!');
+          document.getElementById('contactForm').reset();
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+          alertify.error('Failed to send message. Please try again later.');
+        });
+    }
+  </script>
+  
+  <!-- Main JS -->
+  <script src="JS/main.js"></script>
+</body>
+</html>
